@@ -27,7 +27,6 @@ class ViewController: UIViewController, ImageProcessorDelegate {
     private var rMax: Float = 0
     private var rMin: Float = 360
 
-//    var videoPlayer: VideoPlayer?
     var camera: NostalgiaCamera!
     var imageProcessor: ImageProcessor!
     
@@ -36,16 +35,6 @@ class ViewController: UIViewController, ImageProcessorDelegate {
             let title = isPlaying ? "Стоп" : "Старт"
             btnStart.setTitle(title, for: .normal)
         }
-    }
-    
-    // Start it when it appears
-    override func viewDidAppear(_ animated: Bool) {
-//        camera.start()
-    }
-    
-    // Stop it when it disappears
-    override func viewWillDisappear(_ animated: Bool) {
-//        camera.stop()
     }
 
     override func viewDidLoad() {

@@ -1,8 +1,8 @@
 //
 //  PoseDot.m
-//  RunChecker
+//  PoseReader
 //
-//  Created by Evgeniy Lugovoy on 19.11.2019.
+//  Created by Evgeniy Lugovoy on 15.11.2019.
 //  Copyright © 2019 MeadowsPhoneTeam. All rights reserved.
 //
 

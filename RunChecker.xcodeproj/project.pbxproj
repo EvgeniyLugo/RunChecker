@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AE072FA137DA2708576369F /* Pods_RunChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9798F3421671A116EDB7CA96 /* Pods_RunChecker.framework */; };
 		94AAEA4C2383BAE700D751BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA4B2383BAE700D751BC /* AppDelegate.swift */; };
 		94AAEA502383BAE700D751BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA4F2383BAE700D751BC /* ViewController.swift */; };
 		94AAEA532383BAE700D751BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA512383BAE700D751BC /* Main.storyboard */; };
 		94AAEA552383BB3A00D751BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA542383BB3A00D751BC /* Assets.xcassets */; };
 		94AAEA582383BB3B00D751BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA562383BB3B00D751BC /* LaunchScreen.storyboard */; };
 		94AAEA612383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA602383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite */; };
-		94AAEA672383BC5A00D751BC /* PoseDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA662383BC5A00D751BC /* PoseDot.m */; };
 		94AAEA6C2383BCC700D751BC /* ImageProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA692383BCC700D751BC /* ImageProcessor.mm */; };
 		94AAEA6D2383BCC700D751BC /* NostalgiaCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA6B2383BCC700D751BC /* NostalgiaCamera.mm */; };
 		94AAEA722383BCF900D751BC /* PoseParse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA6E2383BCF900D751BC /* PoseParse.cpp */; };
 		94AAEA732383BCF900D751BC /* TfliteWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA6F2383BCF900D751BC /* TfliteWrapper.mm */; };
 		94AAEA762383BD6500D751BC /* Pose.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA752383BD6500D751BC /* Pose.m */; };
+		94AAEA792383C30100D751BC /* PoseDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA772383C30100D751BC /* PoseDot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8573933C4BC715079A0A21 /* Pods-RunChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunChecker.debug.xcconfig"; path = "Target Support Files/Pods-RunChecker/Pods-RunChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		94AAEA482383BAE600D751BC /* RunChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AAEA4B2383BAE700D751BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94AAEA4F2383BAE700D751BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		94AAEA592383BB3B00D751BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94AAEA602383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = multi_person_mobilenet_v1_075_float.tflite; sourceTree = "<group>"; };
 		94AAEA642383BC5A00D751BC /* RunChecker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunChecker-Bridging-Header.h"; sourceTree = "<group>"; };
-		94AAEA652383BC5A00D751BC /* PoseDot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoseDot.h; sourceTree = "<group>"; };
-		94AAEA662383BC5A00D751BC /* PoseDot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoseDot.m; sourceTree = "<group>"; };
 		94AAEA682383BCC700D751BC /* ImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessor.h; sourceTree = "<group>"; };
 		94AAEA692383BCC700D751BC /* ImageProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageProcessor.mm; sourceTree = "<group>"; };
 		94AAEA6A2383BCC700D751BC /* NostalgiaCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NostalgiaCamera.h; sourceTree = "<group>"; };
@@ -43,6 +43,10 @@
 		94AAEA712383BCF900D751BC /* TfliteWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TfliteWrapper.h; sourceTree = "<group>"; };
 		94AAEA742383BD6500D751BC /* Pose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pose.h; sourceTree = "<group>"; };
 		94AAEA752383BD6500D751BC /* Pose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pose.m; sourceTree = "<group>"; };
+		94AAEA772383C30100D751BC /* PoseDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseDot.m; sourceTree = "<group>"; };
+		94AAEA782383C30100D751BC /* PoseDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseDot.h; sourceTree = "<group>"; };
+		9798F3421671A116EDB7CA96 /* Pods_RunChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6FA5EFC513E0B861837B5F4 /* Pods-RunChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunChecker.release.xcconfig"; path = "Target Support Files/Pods-RunChecker/Pods-RunChecker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +54,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE072FA137DA2708576369F /* Pods_RunChecker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200251FCCC4C79DA86730AC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9798F3421671A116EDB7CA96 /* Pods_RunChecker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		612F45268FDD25FCFDBC220C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D8573933C4BC715079A0A21 /* Pods-RunChecker.debug.xcconfig */,
+				E6FA5EFC513E0B861837B5F4 /* Pods-RunChecker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		94AAEA3F2383BAE500D751BC = {
 			isa = PBXGroup;
 			children = (
 				94AAEA5F2383BBC600D751BC /* Resources */,
 				94AAEA4A2383BAE600D751BC /* RunChecker */,
 				94AAEA492383BAE600D751BC /* Products */,
+				612F45268FDD25FCFDBC220C /* Pods */,
+				200251FCCC4C79DA86730AC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,8 +141,8 @@
 			children = (
 				94AAEA742383BD6500D751BC /* Pose.h */,
 				94AAEA752383BD6500D751BC /* Pose.m */,
-				94AAEA652383BC5A00D751BC /* PoseDot.h */,
-				94AAEA662383BC5A00D751BC /* PoseDot.m */,
+				94AAEA782383C30100D751BC /* PoseDot.h */,
+				94AAEA772383C30100D751BC /* PoseDot.m */,
 			);
 			path = Pose;
 			sourceTree = "<group>";
@@ -130,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94AAEA5C2383BB3B00D751BC /* Build configuration list for PBXNativeTarget "RunChecker" */;
 			buildPhases = (
+				D5D119B7484561F6D403FAA3 /* [CP] Check Pods Manifest.lock */,
 				94AAEA442383BAE600D751BC /* Sources */,
 				94AAEA452383BAE600D751BC /* Frameworks */,
 				94AAEA462383BAE600D751BC /* Resources */,
@@ -191,6 +216,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D5D119B7484561F6D403FAA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunChecker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94AAEA442383BAE600D751BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,7 +248,7 @@
 			files = (
 				94AAEA762383BD6500D751BC /* Pose.m in Sources */,
 				94AAEA6C2383BCC700D751BC /* ImageProcessor.mm in Sources */,
-				94AAEA672383BC5A00D751BC /* PoseDot.m in Sources */,
+				94AAEA792383C30100D751BC /* PoseDot.m in Sources */,
 				94AAEA6D2383BCC700D751BC /* NostalgiaCamera.mm in Sources */,
 				94AAEA502383BAE700D751BC /* ViewController.swift in Sources */,
 				94AAEA722383BCF900D751BC /* PoseParse.cpp in Sources */,
@@ -345,6 +395,7 @@
 		};
 		94AAEA5D2383BB3B00D751BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8573933C4BC715079A0A21 /* Pods-RunChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -367,6 +418,7 @@
 		};
 		94AAEA5E2383BB3B00D751BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6FA5EFC513E0B861837B5F4 /* Pods-RunChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
