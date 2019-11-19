@@ -8,22 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		94AAEA4C2383BAE700D751BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA4B2383BAE700D751BC /* AppDelegate.swift */; };
-		94AAEA4E2383BAE700D751BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA4D2383BAE700D751BC /* SceneDelegate.swift */; };
 		94AAEA502383BAE700D751BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA4F2383BAE700D751BC /* ViewController.swift */; };
 		94AAEA532383BAE700D751BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA512383BAE700D751BC /* Main.storyboard */; };
 		94AAEA552383BB3A00D751BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA542383BB3A00D751BC /* Assets.xcassets */; };
 		94AAEA582383BB3B00D751BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA562383BB3B00D751BC /* LaunchScreen.storyboard */; };
+		94AAEA612383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 94AAEA602383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite */; };
+		94AAEA672383BC5A00D751BC /* PoseDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA662383BC5A00D751BC /* PoseDot.m */; };
+		94AAEA6C2383BCC700D751BC /* ImageProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA692383BCC700D751BC /* ImageProcessor.mm */; };
+		94AAEA6D2383BCC700D751BC /* NostalgiaCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA6B2383BCC700D751BC /* NostalgiaCamera.mm */; };
+		94AAEA722383BCF900D751BC /* PoseParse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA6E2383BCF900D751BC /* PoseParse.cpp */; };
+		94AAEA732383BCF900D751BC /* TfliteWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA6F2383BCF900D751BC /* TfliteWrapper.mm */; };
+		94AAEA762383BD6500D751BC /* Pose.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA752383BD6500D751BC /* Pose.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94AAEA482383BAE600D751BC /* RunChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AAEA4B2383BAE700D751BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94AAEA4D2383BAE700D751BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		94AAEA4F2383BAE700D751BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94AAEA522383BAE700D751BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94AAEA542383BB3A00D751BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94AAEA572383BB3B00D751BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94AAEA592383BB3B00D751BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94AAEA602383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = multi_person_mobilenet_v1_075_float.tflite; sourceTree = "<group>"; };
+		94AAEA642383BC5A00D751BC /* RunChecker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunChecker-Bridging-Header.h"; sourceTree = "<group>"; };
+		94AAEA652383BC5A00D751BC /* PoseDot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoseDot.h; sourceTree = "<group>"; };
+		94AAEA662383BC5A00D751BC /* PoseDot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoseDot.m; sourceTree = "<group>"; };
+		94AAEA682383BCC700D751BC /* ImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessor.h; sourceTree = "<group>"; };
+		94AAEA692383BCC700D751BC /* ImageProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageProcessor.mm; sourceTree = "<group>"; };
+		94AAEA6A2383BCC700D751BC /* NostalgiaCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NostalgiaCamera.h; sourceTree = "<group>"; };
+		94AAEA6B2383BCC700D751BC /* NostalgiaCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NostalgiaCamera.mm; sourceTree = "<group>"; };
+		94AAEA6E2383BCF900D751BC /* PoseParse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PoseParse.cpp; sourceTree = "<group>"; };
+		94AAEA6F2383BCF900D751BC /* TfliteWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TfliteWrapper.mm; sourceTree = "<group>"; };
+		94AAEA702383BCF900D751BC /* PoseParse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PoseParse.hpp; sourceTree = "<group>"; };
+		94AAEA712383BCF900D751BC /* TfliteWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TfliteWrapper.h; sourceTree = "<group>"; };
+		94AAEA742383BD6500D751BC /* Pose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pose.h; sourceTree = "<group>"; };
+		94AAEA752383BD6500D751BC /* Pose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pose.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +59,7 @@
 		94AAEA3F2383BAE500D751BC = {
 			isa = PBXGroup;
 			children = (
+				94AAEA5F2383BBC600D751BC /* Resources */,
 				94AAEA4A2383BAE600D751BC /* RunChecker */,
 				94AAEA492383BAE600D751BC /* Products */,
 			);
@@ -56,8 +76,8 @@
 		94AAEA4A2383BAE600D751BC /* RunChecker */ = {
 			isa = PBXGroup;
 			children = (
+				94AAEA622383BC0E00D751BC /* PoseProcessor */,
 				94AAEA4B2383BAE700D751BC /* AppDelegate.swift */,
-				94AAEA4D2383BAE700D751BC /* SceneDelegate.swift */,
 				94AAEA4F2383BAE700D751BC /* ViewController.swift */,
 				94AAEA512383BAE700D751BC /* Main.storyboard */,
 				94AAEA542383BB3A00D751BC /* Assets.xcassets */,
@@ -65,6 +85,42 @@
 				94AAEA592383BB3B00D751BC /* Info.plist */,
 			);
 			path = RunChecker;
+			sourceTree = "<group>";
+		};
+		94AAEA5F2383BBC600D751BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94AAEA602383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94AAEA622383BC0E00D751BC /* PoseProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				94AAEA632383BC2100D751BC /* Pose */,
+				94AAEA682383BCC700D751BC /* ImageProcessor.h */,
+				94AAEA692383BCC700D751BC /* ImageProcessor.mm */,
+				94AAEA6A2383BCC700D751BC /* NostalgiaCamera.h */,
+				94AAEA6B2383BCC700D751BC /* NostalgiaCamera.mm */,
+				94AAEA6E2383BCF900D751BC /* PoseParse.cpp */,
+				94AAEA702383BCF900D751BC /* PoseParse.hpp */,
+				94AAEA712383BCF900D751BC /* TfliteWrapper.h */,
+				94AAEA6F2383BCF900D751BC /* TfliteWrapper.mm */,
+				94AAEA642383BC5A00D751BC /* RunChecker-Bridging-Header.h */,
+			);
+			path = PoseProcessor;
+			sourceTree = "<group>";
+		};
+		94AAEA632383BC2100D751BC /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				94AAEA742383BD6500D751BC /* Pose.h */,
+				94AAEA752383BD6500D751BC /* Pose.m */,
+				94AAEA652383BC5A00D751BC /* PoseDot.h */,
+				94AAEA662383BC5A00D751BC /* PoseDot.m */,
+			);
+			path = Pose;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +155,7 @@
 				TargetAttributes = {
 					94AAEA472383BAE600D751BC = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -126,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94AAEA582383BB3B00D751BC /* LaunchScreen.storyboard in Resources */,
+				94AAEA612383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite in Resources */,
 				94AAEA552383BB3A00D751BC /* Assets.xcassets in Resources */,
 				94AAEA532383BAE700D751BC /* Main.storyboard in Resources */,
 			);
@@ -138,9 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AAEA762383BD6500D751BC /* Pose.m in Sources */,
+				94AAEA6C2383BCC700D751BC /* ImageProcessor.mm in Sources */,
+				94AAEA672383BC5A00D751BC /* PoseDot.m in Sources */,
+				94AAEA6D2383BCC700D751BC /* NostalgiaCamera.mm in Sources */,
 				94AAEA502383BAE700D751BC /* ViewController.swift in Sources */,
+				94AAEA722383BCF900D751BC /* PoseParse.cpp in Sources */,
+				94AAEA732383BCF900D751BC /* TfliteWrapper.mm in Sources */,
 				94AAEA4C2383BAE700D751BC /* AppDelegate.swift in Sources */,
-				94AAEA4E2383BAE700D751BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,15 +347,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R24VEDUQ4H;
 				INFOPLIST_FILE = RunChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meadowsphone.RunChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunChecker/PoseProcessor/RunChecker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +369,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R24VEDUQ4H;
 				INFOPLIST_FILE = RunChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meadowsphone.RunChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunChecker/PoseProcessor/RunChecker-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
