@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface ImageProcessor : NSObject
+
+@property (nonatomic) bool enableProcessing;
+
 -(id) initWithController: (UIViewController<ImageProcessorDelegate>*)c;
 #ifdef __cplusplus
 - (void)processImage:(cv::Mat &)frame;

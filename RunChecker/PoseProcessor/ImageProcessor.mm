@@ -40,7 +40,8 @@ using namespace cv;
     minPartConfidence = 0.1;
     maxPoseDection = 5;
     pDecodePose = new CDecodePose();
-
+    self.enableProcessing = NO;
+    
     return self;
 
 }
@@ -50,6 +51,10 @@ using namespace cv;
     int height = frame.rows;
     int width = frame.cols;
     cv::resize(frame, small, cv::Size(pDecodePose->m_inputWidth, pDecodePose->m_inputHeight), 0, 0, CV_INTER_LINEAR);
+    if (!self.enableProcessing) {
+        return;
+    }
+    
     float_t *input = [tfLiteWrapper inputTensortFloatAtIndex:0];
     //NSLog(@"Input: %f", *input);
     
@@ -76,7 +81,6 @@ using namespace cv;
     }
     
     int poseCnt = 0;
-    Pose *pose = [[Pose alloc] init];
     map<int, map<int, vector<int> > >::reverse_iterator it;
     for(it = result.rbegin(); it != result.rend(); ++it)
     {
@@ -94,6 +98,7 @@ using namespace cv;
             continue;
         }
         
+        Pose *pose = [[Pose alloc] init];
         pose.personNumber = poseCnt - 1;
         
         for(int i=0; i< it->second.size(); i++)
@@ -128,7 +133,8 @@ using namespace cv;
                 cv::circle(frame, center, 5, Scalar(0,255,255));
             }
         }
-        
+        [delegate poseIsReady:pose];
+
         for(int i=0; i < pDecodePose->m_eCnt; i++)
         {
             int srcKeypoint = pDecodePose->m_childOrder[i];
@@ -146,7 +152,6 @@ using namespace cv;
             cv::line(frame,cv::Point(srcW, srcH), cv::Point(tagW, tagH), Scalar(255,0,255));
 //            NSLog(@"Output: [%d], [%d] - [%d] [%d] -> [%d] [%d]", srcKeypoint, tagKeypoint, srcH, srcW, tagH, tagW);
         }
-        [delegate poseIsReady:pose];
     }
 //    NSLog(@"Output: ------");
     return;

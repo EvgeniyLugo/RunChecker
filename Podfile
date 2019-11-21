@@ -8,4 +8,5 @@ target 'RunChecker' do
   # Pods for RunChecker 
   pod 'TensorFlowLite', '~> 1.13.1'
   pod 'OpenCV2', '~> 3.4.0'
+  pod "Macaw", "0.9.5"
 end

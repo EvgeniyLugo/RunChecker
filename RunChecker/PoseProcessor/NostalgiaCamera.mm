@@ -38,6 +38,7 @@ using namespace cv;
 //    videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront; // Use the front camera
     videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait; // Ensure proper orientation
     videoCamera.rotateVideo = YES; // Ensure proper orientation
+    videoCamera.captureSession.sessionPreset = AVCaptureSessionPresetHigh;
     videoCamera.defaultFPS = 30; // How often 'processImage' is called, adjust based on the amount/complexity of images
     videoCamera.delegate = self;
     imageProcessor = processor;
