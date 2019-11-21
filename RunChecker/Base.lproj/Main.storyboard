@@ -50,7 +50,7 @@
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-Xc-OfJ">
-                                <rect key="frame" x="0.0" y="458" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="M0X-aY-AW7"/>
@@ -91,19 +91,27 @@
                                     <action selector="startClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gn6-wY-ZYi"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHp-Zm-SYo" customClass="GraphicsResultView" customModule="RunChecker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="506" width="343" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="k1w-lv-X1g" firstAttribute="top" secondItem="yf6-J3-mCW" secondAttribute="bottom" constant="8" id="6U6-RJ-njn"/>
                             <constraint firstItem="fMx-bx-2My" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Hr-Sn-02H"/>
+                            <constraint firstItem="IVh-Xm-O12" firstAttribute="top" secondItem="XHp-Zm-SYo" secondAttribute="bottom" constant="8" id="CIH-XX-N80"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IVh-Xm-O12" secondAttribute="bottom" constant="-6" id="ONR-iC-DaB"/>
                             <constraint firstItem="k1w-lv-X1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ssq-PC-Pad"/>
                             <constraint firstItem="Zgn-Xc-OfJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W37-f3-rDi"/>
                             <constraint firstItem="fMx-bx-2My" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WCu-fe-WFe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XHp-Zm-SYo" secondAttribute="trailing" constant="16" id="aox-Qh-Cd1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k1w-lv-X1g" secondAttribute="trailing" constant="16" id="c4S-EA-rGW"/>
                             <constraint firstItem="Zgn-Xc-OfJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eGn-Kh-PzU"/>
+                            <constraint firstItem="XHp-Zm-SYo" firstAttribute="top" secondItem="k1w-lv-X1g" secondAttribute="bottom" constant="8" id="eYu-KW-BOO"/>
                             <constraint firstAttribute="bottom" secondItem="fMx-bx-2My" secondAttribute="bottom" id="f8N-bh-ttY"/>
                             <constraint firstItem="fMx-bx-2My" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fCB-dO-Hqc"/>
+                            <constraint firstItem="XHp-Zm-SYo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gEb-QW-Odq"/>
                             <constraint firstItem="IVh-Xm-O12" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhF-IB-XKO"/>
                             <constraint firstItem="yf6-J3-mCW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lfh-iE-Pmz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zgn-Xc-OfJ" secondAttribute="bottom" id="mjY-tS-7VK"/>
@@ -116,6 +124,7 @@
                         <outlet property="btnStart" destination="IVh-Xm-O12" id="9vY-if-ac3"/>
                         <outlet property="imgView" destination="yf6-J3-mCW" id="AC3-Id-4wz"/>
                         <outlet property="progressView" destination="LCW-Sq-jZY" id="3ZY-iy-F6H"/>
+                        <outlet property="resultView" destination="XHp-Zm-SYo" id="LkP-ak-GzO"/>
                         <outlet property="timeLabel" destination="JvQ-oF-XaR" id="eAP-rv-TCC"/>
                         <outletCollection property="barButtons" destination="L8z-ng-rwn" collectionClass="NSMutableArray" id="1cD-L2-M8P"/>
                         <outletCollection property="barButtons" destination="8ob-OV-r63" collectionClass="NSMutableArray" id="p2C-cT-6Ey"/>
@@ -125,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129.375" y="137.32394366197184"/>
+            <point key="canvasLocation" x="128.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
     <resources>

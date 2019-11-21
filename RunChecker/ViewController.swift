@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnStart: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var resultView: GraphicsResultView!
     
     @IBOutlet var barButtons: [UIBarButtonItem]!
     
@@ -184,10 +185,11 @@ extension ViewController: ImageProcessorDelegate {
     
     private func addResults() {
         var dots = [PoseDot]()
-        var x: Int32 = 0
-        var y: Int32 = 0
         //Соберем показания
         for i in 0..<17 {
+            var x: Int32 = 0
+            var y: Int32 = 0
+            var count: Int32 = 0
             for pose in summaryPoses {
                 if pose.dots.count > i {
                     let dx = (pose.dots[i] as! PoseDot).dotPos.x
@@ -201,12 +203,13 @@ extension ViewController: ImageProcessorDelegate {
                     if Int(dy) > appDelegate.maxY {
                         appDelegate.maxY = Int(dy)
                     }
+                    count += 1
                 }
             }
             let dot = PoseDot()
             dot.dotNumber = Int32(i)
 
-            let pos = simd_int2(x: x / Int32(frameCounts), y: y / Int32(frameCounts))
+            let pos = count > 0 ?  simd_int2(x: x / count, y: y / count) : simd_int2()
             dot.dotPos = pos
             dots.append(dot)
         }
@@ -220,7 +223,12 @@ extension ViewController: ImageProcessorDelegate {
     private func saveResults() {
         self.isPlaying = false
         let leftHips = appDelegate.results.filter { $0.dotNumber == 11 }
-        print("Total: \(appDelegate.results.count), leftHips: \(leftHips.count)")
+        let rightHips = appDelegate.results.filter { $0.dotNumber == 12 }
+        let leftRes = Results(resultName: "Left hip", items: leftHips, startColor: 0xff7200, finishColor: 0xffff86)
+        let rightRes = Results(resultName: "Right hip", items: rightHips, startColor: 0x10ffff, finishColor: 0xbbccff)
+        print("Total: \(appDelegate.results.count), leftHips: \(leftHips.count), rightHips: \(rightHips.count)")
+        resultView.createScene(results: [leftRes, rightRes])
+        resultView.play()
     }
 }
 

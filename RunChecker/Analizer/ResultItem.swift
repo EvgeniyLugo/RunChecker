@@ -21,3 +21,17 @@ struct ResultItem: Codable {
         self.yPosition = Int(pos.dotPos.y)
     }
 }
+
+struct Results {
+    public let resultName: String
+    public let items: [ResultItem]
+    public let startColor: Int
+    public let finishColor: Int
+    
+    public init(resultName: String, items: [ResultItem], startColor: Int, finishColor: Int) {
+        self.resultName = resultName
+        self.items = items
+        self.startColor = startColor
+        self.finishColor = finishColor
+    }
+}
