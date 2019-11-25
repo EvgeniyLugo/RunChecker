@@ -203,6 +203,12 @@ extension ViewController: ImageProcessorDelegate {
                     if Int(dy) > appDelegate.maxY {
                         appDelegate.maxY = Int(dy)
                     }
+                    if Int(dx) < appDelegate.minX {
+                        appDelegate.minX = Int(dx)
+                    }
+                    if Int(dy) < appDelegate.minY {
+                        appDelegate.minY = Int(dy)
+                    }
                     count += 1
                 }
             }
@@ -229,6 +235,10 @@ extension ViewController: ImageProcessorDelegate {
         print("Total: \(appDelegate.results.count), leftHips: \(leftHips.count), rightHips: \(rightHips.count)")
         resultView.createScene(results: [leftRes, rightRes])
         resultView.play()
+        appDelegate.maxX = 0
+        appDelegate.maxY = 0
+        appDelegate.minX = Int.max
+        appDelegate.minY = Int.max
     }
 }
 

@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     var results = [ResultItem]()
+    var minX = Int.max
+    var minY = Int.max
     var maxX: Int = 0
     var maxY: Int = 0
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

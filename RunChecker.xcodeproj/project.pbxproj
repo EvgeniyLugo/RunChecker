@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8AE072FA137DA2708576369F /* Pods_RunChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9798F3421671A116EDB7CA96 /* Pods_RunChecker.framework */; };
 		9423F42023867B4C00877C0E /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9423F41F23867B4C00877C0E /* ResultItem.swift */; };
+		945E319C238BBE0A00EA8982 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 945E319B238BBE0900EA8982 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite */; };
 		949EAF1023871E3A00B1D0F5 /* posenet_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 949EAF0F23871E3900B1D0F5 /* posenet_model.tflite */; };
 		94AAEA4C2383BAE700D751BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA4B2383BAE700D751BC /* AppDelegate.swift */; };
 		94AAEA502383BAE700D751BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAEA4F2383BAE700D751BC /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		1D8573933C4BC715079A0A21 /* Pods-RunChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunChecker.debug.xcconfig"; path = "Target Support Files/Pods-RunChecker/Pods-RunChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		9423F41F23867B4C00877C0E /* ResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
+		945E319B238BBE0900EA8982 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite; sourceTree = "<group>"; };
 		949EAF0F23871E3900B1D0F5 /* posenet_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = posenet_model.tflite; sourceTree = "<group>"; };
 		94AAEA482383BAE600D751BC /* RunChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AAEA4B2383BAE700D751BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		94AAEA5F2383BBC600D751BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				945E319B238BBE0900EA8982 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite */,
 				949EAF0F23871E3900B1D0F5 /* posenet_model.tflite */,
 				94AAEA602383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite */,
 			);
@@ -231,6 +234,7 @@
 				949EAF1023871E3A00B1D0F5 /* posenet_model.tflite in Resources */,
 				94AAEA582383BB3B00D751BC /* LaunchScreen.storyboard in Resources */,
 				94AAEA612383BBFE00D751BC /* multi_person_mobilenet_v1_075_float.tflite in Resources */,
+				945E319C238BBE0A00EA8982 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite in Resources */,
 				94AAEA552383BB3A00D751BC /* Assets.xcassets in Resources */,
 				94AAEA532383BAE700D751BC /* Main.storyboard in Resources */,
 			);

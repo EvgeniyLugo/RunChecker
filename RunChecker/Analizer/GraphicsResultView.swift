@@ -47,7 +47,7 @@ open class GraphicsResultView: MacawView {
             scoreLine.rightGradientColor = result.finishColor
             for item in result.items {
                 let x = Double(item.currentTime) / 30 * chartWidth + 4
-                let y = Double(item.yPosition) / Double(appDelegate.maxY) * chartHeight
+                let y = Double(item.yPosition) / Double(appDelegate.maxY - appDelegate.minY) * chartHeight
                 scoreLine.points.append((x: x, y: y))
             }
             scoreLines.append(scoreLine)

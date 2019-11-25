@@ -44,7 +44,7 @@ CDecodePose::CDecodePose(){
     m_pointThreshold = int(0.1 * FLOAT_TO_INT);
     m_localWindowRadius = 1;
     m_outStride = 16;
-    m_nmsRadius = 30;
+    m_nmsRadius = 50;
     m_squaredNmsRadius = m_nmsRadius*m_nmsRadius;
 }
 
